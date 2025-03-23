@@ -34,6 +34,12 @@ p {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .footer a {
     text-decoration: none;
 }
@@ -93,6 +99,7 @@ p {
     border: 1px solid var(--secondary-color);
     padding: 0.65rem;
     width: 75%;
+    overflow: hidden;
 }
 
 .hero article img {
