@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #e2d686;
+    --secondary-color: #877b66;
+    --accent1-color: #ffdf64;
+    --accent2-color: #3ea0c4;
+    --accent3-color: #afc97e;
+}
+
+h1 {
+    color: var(--accent3-color);
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    color: var(--accent2-color);
+    font-family: "Big Shoulders", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    color: var(--accent1-color);
+    font-family: "Big Shoulders", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.footer-section a {
+    text-decoration: none !important;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-box img {
+    width: 250px;
+    height: auto;
+}
+
+.nav-bar {
+    align-items: center;
+    font-family: "Big Shoulders", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero {
+    position: relative;
+    margin: 10px auto;
+    width: 100%;
+    height: 600px;
+}
+
+.hero img {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: inherit;
+    text-align: center;
+    background-color: rgba(135,123,102,0.8);
+    font-size: 80px;
+    top: 55px;
+}
+
+.hero article{
+    position: relative;
+    background-color: rgba(62,160,196,0.8);
+    top: 50px;
+    left: 15%;
+    right: 15%;
+    border: 1px solid var(--secondary-color);
+    padding: 0.65rem;
+    width: 75%;
+    /* margin: 250px auto; */
+    /* justify-items: center; */
+}
+
+.hero article img {
+    /* background-color: var(--accent3-color); */
+    width: auto;
+    height: 190px;
+    float: right;
+    position: relative;
+    z-index: 9999;
+}
