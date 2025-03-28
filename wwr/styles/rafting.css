@@ -32,7 +32,7 @@ h1 {
     color: var(--accent3-color);
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 3rem;
     text-align: center;
 }
@@ -41,7 +41,7 @@ h2 {
     color: var(--accent2-color);
     font-family: "Big Shoulders", sans-serif;
     font-style: normal;
-    font-weight: 300px;
+    font-weight: 300;
     font-size: 2.5rem;
     text-align: center;
     grid-column: 1 / -1;
