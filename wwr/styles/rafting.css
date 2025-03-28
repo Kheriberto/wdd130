@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #e2d686;
     --secondary-color: #877b66;
@@ -6,12 +12,28 @@
     --accent3-color: #afc97e;
 }
 
+header {
+    /* background-color: rgba(226,214,134); */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    column-gap: 0.5rem;
+    align-items: center;
+    /* border-bottom: 1px solid var(--secondary-color); */
+    max-width: 1000px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
 h1 {
     color: var(--accent3-color);
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 2.5rem;
+    font-weight: 400px;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -19,20 +41,31 @@ h2 {
     color: var(--accent2-color);
     font-family: "Big Shoulders", sans-serif;
     font-style: normal;
-    font-weight: 300;
-    font-size: 2rem;
+    font-weight: 300px;
+    font-size: 2.5rem;
     text-align: center;
+    grid-column: 1 / -1;
+    margin: 1rem;
 }
 
-p {
-    color: var(--accent1-color);
+p, .equip figcaption {
     font-family: "Big Shoulders", sans-serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.5;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
+
+footer {
+    border-top: 1px solid var(--secondary-color);
+    max-width: 100%;
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Class Selectors */
 
 .clearfix::after {
     content: "";
@@ -40,15 +73,10 @@ p {
     clear: both;
 }
 
-.footer a {
-    text-decoration: none;
-}
-
 .logo-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    /* margin: 0 0.25rem 0 1rem; */
+    width: 64px;
+    height: auto;
 }
 
 .logo-box img {
@@ -64,12 +92,12 @@ p {
     font-size: 2rem;
     color: var(--secondary-color);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .hero {
     position: relative;
-    margin: 10px auto;
+    margin-top: 15px;
     width: 100%;
     height: 600px;
 }
@@ -85,9 +113,17 @@ p {
     position: absolute;
     object-fit: cover;
     background-color: rgba(135,123,102,0.8);
-    font-size: 80px;
-    top: 35px;
+    font-size: 70px;
+    top: 65px;
     width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.hero p {
+    padding: 1rem 2rem 1rem 1rem;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    font-weight: 300;
+    color: whitesmoke;
 }
 
 .hero article{
@@ -105,7 +141,93 @@ p {
 .hero article img {
     width: auto;
     height: 190px;
+    margin: 0.5rem 0.5rem;
     float: right;
     position: relative;
     z-index: 9999;
+}
+
+.history-section {
+    background-color: rgba(175,201,126,0.3);
+    /* margin: 2rem 2rem 2rem 2rem; */
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 2fr 20% 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    padding-left: 6rem;
+}
+
+.history-section img {
+    justify-self: center;
+    padding-bottom: 4rem;
+}
+
+.right {
+    padding-right: 6rem;
+    text-align: right;
+}
+
+.text {
+    color: var(--accent2-color);
+    padding-bottom: 4rem;
+    font-weight: 400;
+}
+
+.adventure-section {
+    background-color: rgba(255,223,100,0.3);
+    padding: 25px 2rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+}
+
+.equip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.equip img {
+    height: 200px;
+    width: auto;
+    margin-bottom: 0.5rem;
+    border: #3ea0c4 5px dotted
+}
+
+.equip figcaption {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--accent2-color);
+}
+
+.social-media {
+    max-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-media img {
+    width: 35px;
+    height: auto;
+    /* padding-left: 2px; */
+}
+
+footer p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--seconfary-color);
+    margin: 1rem 0px;
+}
+
+.footer a {
+    text-decoration: none;
 }
