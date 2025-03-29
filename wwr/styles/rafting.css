@@ -7,9 +7,13 @@
 :root {
     --primary-color: #e2d686;
     --secondary-color: #877b66;
+    --secondary-color_1: #664100;
     --accent1-color: #ffdf64;
     --accent2-color: #3ea0c4;
+    --accent2-color_1: #3b768c;
+    --accent2-color_2: #3cfbe5;
     --accent3-color: #afc97e;
+
 }
 
 header {
@@ -25,11 +29,11 @@ header {
 
 nav a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--accent2-color_1);
 }
 
 h1 {
-    color: var(--accent3-color);
+    color: var(--accent2-color_2);
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -38,10 +42,10 @@ h1 {
 }
 
 h2 {
-    color: var(--accent2-color);
+    /* color: var(--secondary-color_1); */
     font-family: "Big Shoulders", sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 2.5rem;
     text-align: center;
     grid-column: 1 / -1;
@@ -56,13 +60,24 @@ p, .equip figcaption {
 }
 
 footer {
-    border-top: 1px solid var(--secondary-color);
+    border-top: 4px dashed var(--accent2-color_1);
     max-width: 100%;
     margin: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+footer p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--accent2-color_1);
+    margin: 1rem 0px;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 /* Class Selectors */
@@ -75,12 +90,12 @@ footer {
 
 .logo-box {
     /* margin: 0 0.25rem 0 1rem; */
-    width: 64px;
+    /* width: 35px; */
     height: auto;
 }
 
 .logo-box img {
-    width: 250px;
+    width: 180px;
     height: auto;
 }
 
@@ -88,9 +103,8 @@ footer {
     align-items: center;
     font-family: "Big Shoulders", sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2rem;
-    color: var(--secondary-color);
     display: flex;
     justify-content: space-around;
 }
@@ -112,7 +126,7 @@ footer {
 .hero h1 {
     position: absolute;
     object-fit: cover;
-    background-color: rgba(135,123,102,0.8);
+    background-color: rgba(102,65,0,0.8);
     font-size: 70px;
     top: 65px;
     width: 100%;
@@ -128,7 +142,7 @@ footer {
 
 .hero article{
     position: relative;
-    background-color: rgba(62,160,196,0.8);
+    background-color: rgba(59,118,140,0.9);
     top: 225px;
     left: 15%;
     right: 15%;
@@ -148,13 +162,17 @@ footer {
 }
 
 .history-section {
-    background-color: rgba(175,201,126,0.3);
+    background-color: #f4ffcc /* rgba(175,201,126,0.3) */;
     /* margin: 2rem 2rem 2rem 2rem; */
     padding-top: 25px;
     display: grid;
     grid-template-columns: 2fr 20% 2fr;
     justify-content: center;
     align-items: center;
+}
+
+.history-section h2 {
+    color: #347289;
 }
 
 .left {
@@ -172,7 +190,7 @@ footer {
 }
 
 .text {
-    color: var(--accent2-color);
+    color: #347289 /* var(--accent2-color) */;
     padding-bottom: 4rem;
     font-weight: 400;
 }
@@ -184,9 +202,14 @@ footer {
     grid-template-columns: repeat(5, 5fr);
 }
 
+.adventure-section h2 {
+    color: var(--secondary-color_1);
+}
+
 .equip {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -197,13 +220,13 @@ footer {
     height: 200px;
     width: auto;
     margin-bottom: 0.5rem;
-    border: #3ea0c4 5px dotted
+    border: 5px dotted var(--secondary-color_1);
 }
 
 .equip figcaption {
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--accent2-color);
+    color: var(--secondary-color_1);
 }
 
 .social-media {
@@ -219,15 +242,4 @@ footer {
     width: 35px;
     height: auto;
     /* padding-left: 2px; */
-}
-
-footer p {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--secondary-color);
-    margin: 1rem 0px;
-}
-
-.footer a {
-    text-decoration: none;
 }
