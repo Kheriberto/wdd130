@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-color: black;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    margin: 3rem 2rem;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: navy;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.7rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    font-weight: 200;
+    display: grid;
+    grid-gap: 1rem 2rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+h1, legend {
+    color: navy;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.column3 textarea {
+    margin: 0.5rem auto 0;
+    padding: 0.5rem;
+    grid-column: 1 / -1;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+/* button {
+    background-color: #eee;
+    margin-bottom: rem;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    margin: 0 auto 1rem;
+} */
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+/* Class Selectors */
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 1fr 3fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    /* display: contents; */
+    grid-template-columns: 2fr 1fr;
+}
+
+.column2 label {
+    grid-column: 1 / 2;
+}
+
+/* .column2 select,
+.column2 input[type="checkbox"] {
+    grid-column: 2 / 3;
+}
+
+.column3 {
+    justify-items: center;
+} */
+
+.column3 label {
+    column-span: all;
+    text-align: center;
+}
+
+.submit_section {
+    width: auto;
+    margin: 1rem auto;
+    justify-items: center;
+}
+
+.submit_button {
+    background-color: navy;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    border-radius: 0.7rem;
+    text-align: center;
+}
+
+.submit_button:hover {
+    background-color: darkgreen;
+}

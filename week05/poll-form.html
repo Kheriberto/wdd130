@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Form</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form class="entire">
+            <fieldset class="field_contact">
+                <legend>Contact Information</legend>
+                <!-- form elements will go here -->
+                <div class="form-item column1">
+                    <label for="fullname">Full Name: </label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-item column1">
+                    <label for="useremail">Email: </label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <!-- form elements will go here -->
+                <div class="form-item column2">
+                    <label for = "browser">What is your favorite browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-item column2">
+                    <label for="pet">Do you have a pet?</label>
+                    <input type="checkbox" id="pet" name="pet" value="yes">
+                </div>
+                <div class="form-item column3">
+                    <label>List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="5" placeholder="Write your answer here"></textarea>
+                </div>
+            </fieldset>
+            <div class="submit_section">
+                <input type="submit" class="submit_button" value="Submit Poll">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 | HTML Form - User Poll Activity | Kheri Gonzalez Azuara</p>
+    </footer>
+</html>
