@@ -92,8 +92,9 @@ option {
 }
 
 input[type="checkbox"] {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
+    /* vertical-align: center; */
     margin-right: 0.5rem;
 }
 
@@ -364,9 +365,22 @@ footer p {
     grid-column: 3 / -1;
 }
 
+.questions {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.questions label {
+    grid-column: 1 / 2;
+    text-shadow: #fff 0.5px 0.5px 0.5px;
+}
+
 #name, #email, #message {
     width: 100%;
-    padding: 0.7rem 1rem;
+    padding: 0.5rem 1rem;
+    grid-column: 2 / 3;
 }
 
 .field-contact {
@@ -393,15 +407,17 @@ footer p {
 }
 
 .checkbox {
-    display: flex;
+    /* display: grid;
+    grid-template-columns: 30px 1fr; */
     align-items: center;
 }
 
 .checkbox label {
     font-size: 1.1rem;
     font-weight: 400;
-    text-shadow: rgba(255,255,255, 0.7) 0.5px 0.5px 0.5px
-    /* align-self: top; */
+    text-shadow: rgba(255,255,255, 0.7) 0.5px 0.5px 0.5px;
+    /* vertical-align: top; */
+    /* grid-column: 2 / 3; */
 }
 
 .submit_button {
