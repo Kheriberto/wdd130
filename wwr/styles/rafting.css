@@ -479,9 +479,11 @@ footer p {
     width: 100%;
 }
 
-.index-hero-image {
+.hero-index img {
     width: 100%;
+    height: auto;
     text-shadow: rgb(0,0,0) 0px 1px 0px;
+    /* justify-self: center; */
 }
 
 .hero-image-overlay {
@@ -537,11 +539,12 @@ footer p {
 .index-lower-section {
     width: 100vw;
     height: auto;
+    margin-top: -0.3rem;
     background: linear-gradient(135deg, var(--accent2-color), var(--primary-color) 70%);
     display: grid;
     gap: 1rem;
     grid-template-columns: 70% 30%;
-    padding: 5rem 17%;
+    padding: 5rem;
     box-sizing: border-box;
 }
 
@@ -602,6 +605,8 @@ footer p {
     object-position: 0% 15%;
 }
 
+/* Taste */
+
 .taste {
     position: relative;
     width: 100%;
@@ -613,6 +618,52 @@ footer p {
     height: 375px;
     object-fit: cover;
 }
+
+.overlay-index-grid {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--accent2-color_1);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+}
+
+.large-text {
+    font-size: 1.5rem;
+}
+
+.small-text {
+    font-size: 1.1rem;
+}
+
+.overlay-text {
+    color: white;
+    font-family: 'Big Shoulders', sans-serif;
+    font-weight: 500;
+    text-shadow: rgba(0,0,0,0.8) 1px 2px 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.backyard:hover .overlay-index-grid,
+.taste:hover .overlay-index-grid,
+.unplug:hover .overlay-index-grid,
+.zip:hover .overlay-index-grid,
+.climbing:hover .overlay-index-grid,
+.trails:hover .overlay-index-grid {
+    bottom: 0;
+    height: 100%;
+}
+
+/* end o flip card */
 
 .unplug {
     position: relative;
@@ -679,6 +730,7 @@ footer p {
     grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
+    align-items: left;
     justify-content: space-between;
 }
 
@@ -691,7 +743,7 @@ a {
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
-    width: 100%;
+    width: 90%;
     border: #333 solid 2px;
     padding: 2rem 0;
     border-radius: 20px;
@@ -727,7 +779,7 @@ a {
 }
 
 .newsletter-form {
-    width: 100%;
+    width: 90%;
     padding: 3rem 0 3rem 0;
     border: #333 solid 2px;
     border-radius: 20px;
@@ -782,6 +834,7 @@ a {
 }
 
 .index-buttons {
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
