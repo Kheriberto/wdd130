@@ -179,7 +179,7 @@ footer p {
     color: whitesmoke;
 }
 
-.hero article{
+.hero article {
     position: relative;
     background-color: rgba(59,118,140,0.9);
     top: 225px;
@@ -582,14 +582,19 @@ footer p {
     grid-column: 1 / 2;
 }
 
-.index-picture-text {
+.index-picture-text,
+.trips-picture-text {
     position: absolute;
-    background-color: white;
-    bottom: 0.7rem;
+    background-color: rgba(255, 255, 255, 0.8);
     font-family: 'Big Shoulders', sans-serif;
-    font-size: 1.2rem;
     font-weight: 500;
+    color: var(--secondary-color_1);
     padding: 0.3rem 0.5rem;
+}
+
+.index-picture-text{
+    bottom: 0.7rem;
+    font-size: 1.2rem;
 }
 
 .backyard {
@@ -618,6 +623,75 @@ footer p {
     height: 375px;
     object-fit: cover;
 }
+
+/* Unplug */
+
+.unplug {
+    position: relative;
+    width: 100%;
+    grid-row: 2 / 3;
+}
+
+.unplug img {
+    width: 300px;
+    height: 375px;
+    object-fit: cover;
+}
+
+.pictures-block-2 {
+    width: auto;
+    height: 750px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.2rem;
+    grid-column: 2 / 3;
+}
+
+/* Zip */
+
+.zip {
+    position: relative;
+    width: 100%;
+    grid-row: 1 / 2;
+}
+
+.zip img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Climbing */
+
+.climbing {
+    position: relative;
+    width: 100%;
+    grid-row: 2 / 3;
+}
+
+.climbing img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Trails */
+
+.trails {
+    position: relative;
+    width: 100%;
+    grid-row: 3 / 4;
+}
+
+.trails img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Picture grid Hover effect */
 
 .overlay-index-grid {
     position: absolute;
@@ -663,67 +737,6 @@ footer p {
     height: 100%;
 }
 
-/* end o flip card */
-
-.unplug {
-    position: relative;
-    width: 100%;
-    grid-row: 2 / 3;
-}
-
-.unplug img {
-    width: 300px;
-    height: 375px;
-    object-fit: cover;
-}
-
-.pictures-block-2 {
-    width: auto;
-    height: 750px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 0.2rem;
-    grid-column: 2 / 3;
-}
-
-.zip {
-    position: relative;
-    width: 100%;
-    grid-row: 1 / 2;
-}
-
-.zip img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-}
-
-.climbing {
-    position: relative;
-    width: 100%;
-    grid-row: 2 / 3;
-}
-
-.climbing img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-}
-
-.trails {
-    position: relative;
-    width: 100%;
-    grid-row: 3 / 4;
-}
-
-.trails img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    object-position: top;
-}
-
 /* Index right block */
 
 .index-right-section {
@@ -759,7 +772,7 @@ a {
 
 .trips-cta button,
 .index-form-button,
-.index-button {
+.index-button{
     width: 8.5rem;
     height: 3rem;
     background-color: #333;
@@ -839,4 +852,255 @@ a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+/* TRIPS PAGE */
+
+.trips-top h1 {
+    padding: 1.2em 1.2em;
+    color: black;
+    font-size: 4rem;
+    /* text-shadow: rgba(255,255,255, 0.7) 3px 3px 2px; */
+    background-color: var(--accent2-color);
+}
+
+/* Trips Top */
+
+.trips-routes-section {
+    width: 100vw;
+    height: auto;
+    padding: 0 7em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+    /* place-items: center; */
+    box-sizing: border-box;
+    background-color: var(--accent2-color);
+}
+
+.trips-routes-right {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    font-family: 'Big Shoulders', sans-serif;
+}
+
+.trips-picture-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+.trips-picture-description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 1.5rem;
+}
+
+.trips-picture-prompt {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+}
+
+.trips-routes-right button {
+    font-family: 'Big Shoulders', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    align-self: center;
+    margin: 2rem 0 3rem;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.trips-top button:hover {
+    background-color: var(--accent1-color);
+    color: black;
+    text-decoration: underline;
+}
+
+.trips-cascade,
+.trips-lazy,
+.trips-thunder {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: top;
+    align-items: top;
+    gap: 1em;
+    border: 4px dotted var(--secondary-color_1)
+}
+
+.trips-cascade,
+.trips-lazy {
+    flex-direction: column;
+}
+
+.trips-cascade .trips-picture-description,
+.trips-lazy .trips-picture-description {
+    padding-right: 1.5rem;
+}
+
+.trips-picture-text {
+    font-size: 1.5rem;
+    top: 1rem;
+}
+
+/* Thunder */
+
+.trips-thunder {
+    flex-direction: row;
+}
+
+.trips-thunder {
+    position: relative;
+    width: 100%;
+    grid-column: 1 / 3;
+}
+
+.thunder-left {
+    position: relative;
+}
+
+.thunder-left img {
+    width: 800px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Cascade */
+
+.trips-cascade {
+    position: relative;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.cascade-left {
+    position: relative;
+    width: 100%;
+    grid-column: 1 / 2;
+}
+
+.cascade-left img {
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.cascade-right {
+    position: relative;
+    grid-column: 2 / 3;
+}
+
+/* lazy */
+
+.trips-lazy {
+    position: relative;
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.lazy-left {
+    position: relative;
+    width: 100%;
+    grid-column: 1 / 2;
+}
+
+.lazy-left img {
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.lazy-right {
+    position: relative;
+    grid-column: 2 / 3;
+}
+
+/* TRIPS MIDDLE */
+
+.trips-pricing {
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 30% 40% 30%;
+    padding: 1rem 17%;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: white;
+}
+
+thead tr {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+thead th {
+    padding: 1em 0.5em;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.trips-table-subtitle {
+    font-size: .8em;
+    font-weight: 400;
+}
+
+.table-price {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+tbody td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:last-of-type td {
+    border-bottom: none;
+}
+
+.trips-pricing-main th {
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+.trips-pricing-main td {
+    font-size: 1.3em;
+}
+
+.trips-pricing-main .table-price {
+    font-size: 1.6em;
+}
+
+.trips-pricing > table {
+    align-self: center;
+    height: auto;
+}
+
+.trips-pricing > table:first-child,
+.trips-pricing > table:last-child {
+    height: 300px;
+    overflow: hidden;
 }

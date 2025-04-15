@@ -8,11 +8,17 @@ body {
     background-color: #f0f0f0;
 }
 
-.pricing-container {
-    overflow-x: auto;
-    width: 90%;
-    max-width: 900px;
-    margin: 20px;
+/* Table start */
+
+.trips-pricing {
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 30% 40% 30%;
+    padding: 1rem 17%;
+    box-sizing: border-box;
 }
 
 table {
@@ -30,16 +36,19 @@ thead tr {
 }
 
 thead th {
-    padding: 15px;
-    font-weight: bold;
-    font-size: 1.1em;
+    padding: 1em 0.5em;
+    font-weight: 600;
+    font-size: 1.5em;
 }
 
-thead span {
-    display: block;
-    font-size: 0.8em;
-    font-weight: normal;
-    color: #d0d0d0;
+.trips-table-subtitle {
+    font-size: .8em;
+    font-weight: 400;
+}
+
+.table-price {
+    font-size: 1.4em;
+    font-weight: 600;
 }
 
 tbody td {
@@ -55,42 +64,31 @@ tbody tr:last-of-type td {
     border-bottom: none;
 }
 
-.featured {
-    background-color: #c1d89d;
-    position: relative;
-    z-index: 1;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
-    /* Changed text color in featured column */
-    color: #007bff; /* Example: Blue color for featured text */
-    font-weight: bold;  /* Optional: Make the text bold */
+.trips-pricing-main th {
+    font-size: 1.7em;
+    font-weight: 600;
 }
 
-.featured::before,
-.featured::after {
-    content: '';
-    position: absolute;
-    border: 15px solid transparent;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+.trips-pricing-main td {
+    font-size: 1.3em;
 }
 
-.featured::before {
-    left: -15px;
-    border-right-color: #c1d89d;
+.trips-pricing-main .table-price {
+    font-size: 1.6em;
 }
 
-.featured::after {
-    right: -15px;
-    border-left-color: #c1d89d;
+.trips-pricing > table {
+    align-self: center; /* Ensures side tables stay fixed at the top */
+    height: auto; /* Allows the middle table to expand */
 }
 
-.address-style { 
-	font-weight: 700;
-	font-family: "sans-serif";
-	font-size: 1.7rem;
-	color: var(--secondary-color_1); 
+.trips-pricing > table:first-child,
+.trips-pricing > table:last-child {
+    height: 300px; /* Set a fixed height for the side tables */
+    overflow: hidden; /* Prevent content overflow */
 }
+
+
 
 /* INDEX LOWER SECTION */
 
