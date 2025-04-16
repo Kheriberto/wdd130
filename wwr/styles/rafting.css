@@ -428,6 +428,7 @@ footer p {
         rgba(0,0,0,0.4) 30%,
         rgba(0,0,0,0)
     );
+    font-family: "Big Shoulders", sans-serif;
     font-size: 1.3rem;
     text-align: center;
     text-shadow: rgba(0,0,0,0.5) 1px 1px 1px;
@@ -441,6 +442,7 @@ footer p {
 
 .submit_button:hover {
     background-color: var(--accent2-color_1);
+    text-decoration: underline;
 }
 
 #map {
