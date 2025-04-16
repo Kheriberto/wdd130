@@ -40,7 +40,6 @@
                     <div class="pictures-block-1">
                         <div class="backyard">
                             <img src="images/backyard.webp" alt="Oregon's Untamed Backyard">
-                            <div class="index-picture-text">Oregon’s Untamed Backyard</div>
                             <div class="overlay-index-grid">
                                 <div class="overlay-text large-text">Paddle through the heart of Oregon’s untamed wilderness, where roaring rapids meet adrenaline-fueled grins. This is your backyard escape where every splash turns strangers into crewmates and rivers into lifelong stories.</div>
                             </div>
@@ -88,12 +87,12 @@
             <div class="index-right-section">
                 <div class="trips-cta">
                     <p class="trips-cta-title">Adventure is Calling<br>Will You Answer?</p>
-                    <button class="trips-cta-button"><a href="trips.html">Explore Trips</a></button>
+                    <button  type="button" class="trips-cta-button" onclick="location.href='trips.html'">Explore Trips</button>
                 </div>
                 <form class="newsletter-form">
                     <p>Subscribe to our Newsletter</p>
                     <div class="index-form-questions">
-                        <input type="name" id="name" name="name" placeholder="Name" required>
+                        <input type="text" id="name" name="fname" placeholder="Name" required>
                         <input type="email" id="email" name="email" placeholder="Email" required>
                     </div>
                     <input type="submit" value="Subscribe" class="index-form-button">
@@ -103,8 +102,8 @@
                     </div>
                 </form>
                 <div class="index-buttons">
-                    <button class="index-button"><a href="about.html">About Us</a></button>
-                    <button class="index-button"><a href="contact.html">Contact Us</a></button>
+                    <button type="button" class="index-button" onclick="location.href='about.html'">About Us</button>
+                    <button type="button" class="index-button" onclick="location.href='contact.html'">Contact Us</button>
                 </div>
             </div>
         </div>
