@@ -784,8 +784,17 @@ a {
     color: white;
 }
 
+.trips-top button:hover {
+    background-color: var(--accent1-color);
+    color: black;
+    text-decoration: underline;
+    border: 3px solid var(--accent2-color_1);
+    transition: all 0.3s ease;
+}
+
 .index-form-button:hover,
 .trips-cta button:hover,
+.trips-bottom button:hover,
 .index-button:hover {
     background-color: var(--accent2-color_1);
     text-decoration: underline;
@@ -858,10 +867,11 @@ a {
 
 .trips-top h1 {
     padding: 1.2em 1.2em;
-    color: black;
     font-size: 4rem;
-    /* text-shadow: rgba(255,255,255, 0.7) 3px 3px 2px; */
-    background-color: var(--accent2-color);
+    color: var(--secondary-color_1);
+    text-shadow: rgba(255,255,255, 0.7) 3px 3px 2px;
+    background: #AFC97E;
+    background: linear-gradient(90deg,rgba(175, 201, 126, 1) 0%, rgba(60, 251, 229, 1) 50%, rgba(226, 214, 134, 1) 100%);
 }
 
 /* Trips Top */
@@ -874,21 +884,23 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto;
     gap: 1rem;
-    /* place-items: center; */
     box-sizing: border-box;
-    background-color: var(--accent2-color);
+    background: #AFC97E;
+    background: linear-gradient(90deg,rgba(175, 201, 126, 1) 0%, rgba(60, 251, 229, 1) 50%, rgba(226, 214, 134, 1) 100%);
 }
 
 .trips-routes-right {
+    font-family: 'Big Shoulders', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: space-around;
-    font-family: 'Big Shoulders', sans-serif;
 }
 
 .trips-picture-title {
     font-family: 'Bebas Neue', sans-serif;
+    color: var(--secondary-color_1);
+    text-shadow: rgba(255,255,255, 0.7) 3px 3px 2px;
     font-size: 3rem;
     font-weight: 500;
     padding: 1rem 0 1rem 1.5rem;
@@ -902,6 +914,8 @@ a {
 
 .trips-picture-prompt {
     font-size: 1.8rem;
+    color: var(--secondary-color_1);
+    text-shadow: rgba(255,255,255, 0.7) 3px 3px 2px;
     font-weight: 500;
     padding: 1rem 1.5rem;
 }
@@ -912,17 +926,11 @@ a {
     font-weight: 500;
     padding: 1rem 2rem;
     align-self: center;
-    margin: 2rem 0 3rem;
+    margin: 2rem 0 2.5rem;
     background-color: #333;
-    border: none;
+    border: 3px solid #333;
     border-radius: 10px;
     color: white;
-}
-
-.trips-top button:hover {
-    background-color: var(--accent1-color);
-    color: black;
-    text-decoration: underline;
 }
 
 .trips-cascade,
@@ -934,7 +942,8 @@ a {
     justify-content: top;
     align-items: top;
     gap: 1em;
-    border: 4px dotted var(--secondary-color_1)
+    background-color: rgba(255,255,255,0.6) /*rgba(62,160,196,0.3)*/;
+    border: 2px solid var(--secondary-color_1);
 }
 
 .trips-cascade,
@@ -1028,10 +1037,31 @@ a {
 
 /* TRIPS MIDDLE */
 
+.trips-middle {
+    padding: 4rem 0 1rem;
+    background: #AFC97E;
+    background: linear-gradient(90deg,rgba(175, 201, 126, 1) 0%, rgba(60, 251, 229, 1) 50%, rgba(226, 214, 134, 1) 100%);
+}
+
+.trips-middle h2 {
+    font-size: 3rem;
+    color: var(--secondary-color_1);
+    text-shadow: rgba(255,255,255, 0.7) 3px 3px 2px;
+}
+
+.trips-middle-subtitle {
+    padding-bottom: 2rem;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
 .trips-pricing {
     width: 100%;
     height: auto;
-    background-color: #f0f0f0;
+    background: #AFC97E;
+    background: linear-gradient(90deg,rgba(175, 201, 126, 1) 0%, rgba(60, 251, 229, 1) 50%, rgba(226, 214, 134, 1) 100%);
     display: grid;
     gap: 1rem;
     grid-template-columns: 30% 40% 30%;
@@ -1043,38 +1073,44 @@ table {
     width: 100%;
     border-collapse: collapse;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    background-color: white;
+    background: white
 }
 
 thead tr {
-    background-color: #333;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: var(--accent2-color_1);
     color: white;
+    text-shadow: rgba(0,0,0,0.5) 2px 3px 1px;
     text-align: center;
 }
 
 thead th {
     padding: 1em 0.5em;
-    font-weight: 600;
-    font-size: 1.5em;
+    font-weight: 400;
+    font-size: 1.7em;
 }
 
 .trips-table-subtitle {
     font-size: .8em;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .table-price {
-    font-size: 1.4em;
+    font-size: 1.7em;
     font-weight: 600;
 }
 
 tbody td {
     padding: 12px 15px;
+    font-family: "Big Shoulders", sans-serif;
     text-align: center;
+    font-size: 1.5em;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: rgba(135,123,102,0.8);
+    color: white;
+    text-shadow: rgba(0,0,0,0.5) 2px 3px 1px;
 }
 
 tbody tr:last-of-type td {
@@ -1082,16 +1118,16 @@ tbody tr:last-of-type td {
 }
 
 .trips-pricing-main th {
-    font-size: 1.7em;
+    font-size: 2em;
     font-weight: 600;
 }
 
 .trips-pricing-main td {
-    font-size: 1.3em;
+    font-size: 2em;
 }
 
 .trips-pricing-main .table-price {
-    font-size: 1.6em;
+    font-size: 2.2em;
 }
 
 .trips-pricing > table {
@@ -1103,4 +1139,85 @@ tbody tr:last-of-type td {
 .trips-pricing > table:last-child {
     height: 300px;
     overflow: hidden;
+}
+
+/* Trips Bottom */
+
+.trips-bottom {
+    width: 100%;
+    padding: 4rem 10rem 5rem;
+    background: #AFC97E;
+    background: linear-gradient(90deg,rgba(175, 201, 126, 1) 0%, rgba(60, 251, 229, 1) 50%, rgba(226, 214, 134, 1) 100%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.trips-bottom-right,
+.trips-bottom-left {
+    height: 100%;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: rgba(255,255,255,0.8) 1px 1px 3px;
+    background-color: rgba(215,200,215,0.5);
+    border: 4px dashed var(--accent2-color_1);
+    border-radius: 10px;
+}
+
+/* .trips-bottom-right {
+    background-image: radial-gradient(circle at 30% 40%, #65FDF0 10%, #1D6FA3 100%);
+}
+
+.trips-bottom-left {
+    background-image: linear-gradient(45deg, #1D6FA3 10%, #65FDF0 100%);
+} */
+
+.trips-bottom-text {
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.trips-bottom-left-cta,
+.trips-bottom-right-cta {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    color: var(--accent2-color_1);
+}
+
+.trips-bottom-left-cta {
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.trips-bottom-right-cta {
+    margin-top: 0.5rem;
+    font-size: 2.3rem;
+}
+
+.trips-bottom button {
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    background-color: #333;
+    border: 3px solid #333;
+    color: white;
+    text-align: center;
+}
+
+.trips-bottom-left button {
+    margin-top: 0.6rem;
+    padding: 0.8rem 3rem;
+    border-radius: 15px;
+}
+
+.trips-bottom-right button {
+    margin: 0.3rem;
+    padding: 0.8rem 4rem;
+    border-radius: 35px;
 }
